@@ -37,6 +37,13 @@ public class MiniCCompiler {
 	MiniCCCfg codegen = new MiniCCCfg();
 	MiniCCCfg simulating = new MiniCCCfg();
 	
+	/**
+	 * 
+	 * @throws ParserConfigurationException
+	 * @throws SAXException
+	 * @throws IOException
+	 * To configure each process use XML
+	 */
 	private void readConfig() throws ParserConfigurationException, SAXException, IOException{
 		DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
 		DocumentBuilder db = dbf.newDocumentBuilder();
@@ -90,6 +97,8 @@ public class MiniCCompiler {
 			}
 		}
 	}
+	
+	
 	
 	public void run(String cFile) throws Exception{
 		
